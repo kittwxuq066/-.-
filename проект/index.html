@@ -3,280 +3,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Клуб Юных Гитаристов </title>
+    <title>Клуб юных гитаристов</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="./style.css">
+ </head>
 <body>
-    <!-- Navigation -->
-    <nav class="nav">
-        <div class="nav-container">
-            <div class="nav-logo">😄 КЮГ</div>
-            <ul class="nav-links">
-                <li><a href="#about">О нас</a></li>
-                <li><a href="#schedule">Расписание</a></li>
-                <li><a href="#teachers">Преподаватели</a></li>
-                <li><a href="#contact">Контакты</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <!-- Hero Header -->
-    <header class="header">
-        <div class="hero-content">
-            <h1 class="logo">Клуб Юных Гитаристов</h1>
-            <p class="hero-subtitle">Раскрой свой талант! Уроки для детей 7-16 лет</p>
-            <a href="#schedule" class="cta-button">Записаться на пробное</a>
-        </div>
-        <div class="scroll-indicator">
-            <i class="fas fa-chevron-down"></i>
-        </div>
+    <header>
+        <img src="2026-03-13_22-54-46.png" alt="Игра на гитаре" class="hero-gif">
+        <h1>🎸 Клуб юных гитаристов 🎸</h1>
+        <p>Современные уроки гитары для детей 7-16 лет!</p>
     </header>
-
+    
+    <nav>
+        <a href="#about">О клубе</a>
+        <a href="#lessons">Уроки</a>
+        <a href="#teachers">Преподаватели</a>
+        <a href="#reviews">Отзывы</a>
+        <a href="#contact">Записаться</a>
+    </nav>
+    
     <div class="container">
-        <!-- About -->
-        <section id="about" class="section fade-in">
-            <h2>🎵 О нашем клубе</h2>
-            <p class="about-text">
-                Клуб работает <strong>7 дней в неделю!</strong> Профессиональные преподаватели, 
-                современное оборудование, дружная атмосфера. От новичков до продвинутых — 
-                найдем программу для каждого!
-            </p>
+        <section id="about">
+            <img src="guitar.png" alt="Гитаристы" class="section-icon">
+            <h2>Добро пожаловать в Клуб для юных музыкантов!!!</h2>
+            <p> Занятия 2 раза в неделю по 1 часу. Группы по 5-8 человек. Первые пробные уроки бесплатно! Инструменты предоставляем.</p>
         </section>
-
-        <!-- Schedule -->
-        <section id="schedule" class="section fade-in">
-            <h2>  Расписание занятий</h2>
-            <div class="schedule-grid">
-                <div class="schedule-day" data-modal="Понедельник|15:00-16:30 - Начинающие (7-10 лет) 
-                18:00-19:30 - Продвинутые (11-14 лет)">
-                    <div class="day-name">Понедельник</div>
-                    <div class="schedule-time">15:00 - 19:30</div>
-                    <span class="schedule-group">2 группы</span>
-                </div>
-                <div class="schedule-day" data-modal="Вторник|16:00-17:30 - Средняя группа (9-12 лет) 
-                19:00-20:30 - Электрогитара (12-16 лет)">
-                    <div class="day-name">Вторник</div>
-                    <div class="schedule-time">16:00 - 20:30</div>
-                    <span class="schedule-group">2 группы</span>
-                </div>
-                <div class="schedule-day" data-modal="Среда|15:00-16:30 - Начинающие
-                17:00-18:30 - Джем-сейшн (все уровни)">
-                    <div class="day-name">Среда</div>
-                    <div class="schedule-time">15:00 - 18:30</div>
-                    <span class="schedule-group">2 группы</span>
-                </div>
-                <div class="schedule-day" data-modal="Четверг|16:00-17:30 - Теория + практика
-                18:30-20:00 - Рок-группа (11-16 лет)">
-                    <div class="day-name">Четверг</div>
-                    <div class="schedule-time">16:00 - 20:00</div>
-                    <span class="schedule-group">2 группы</span>
-                </div>
-                <div class="schedule-day" data-modal="Пятница|15:00-16:30 - Классика. 
-                17:00-19:00 - Блюз & джаз (средний уровень)">
-                    <div class="day-name">Пятница</div>
-                    <div class="schedule-time">15:00 - 19:00</div>
-                    <span class="schedule-group">2 группы</span>
-                </div>
-                <div class="schedule-day" data-modal="Суббота|10:00-11:30 - Малышки (7-9 лет)
-                12:00-14:00 - Концертная подготовка
-                15:00-17:00 - Мастер-класс">
-                    <div class="day-name">Суббота</div>
-                    <div class="schedule-time">10:00 - 17:00</div>
-                    <span class="schedule-group">3 группы</span>
-                </div>
-                <div class="schedule-day" data-modal="Воскресенье|11:00-13:00 - Семейные занятия
-                14:00-16:00 - Репетиция группы
-                17:00-18:30 - Индивидуальные уроки">
-                    <div class="day-name">Воскресенье</div>
-                    <div class="schedule-time">11:00 - 18:30</div>
-                    <span class="schedule-group">3 группы</span>
-                </div>
-            </div>
+        
+        <section id="lessons">
+            <h2>Программа обучения: </h2>
+            <ul>
+                <li>🎵 Основы аккордов (Am, Em, C, G, D, F)</li>
+                <li>🥁 Бой и перебор под поп-песни</li>
+                <li>🤘 Русский рок: ДДТ, Би-2, Сплин</li>
+                <li>🎸 Классическая гитара (пальцевый стиль)</li>
+                <li>🔥 Электрогитара и дисторшн</li>
+                <li>🎤 Вокал + гитара (свой аккомпанемент)</li>
+                <li>👥 Групповые джем-сейшны</li>
+                <li>📱 Запись треков на телефон</li>
+            </ul>
         </section>
+        
+        <section id="teachers" class="teachers">
 
-        <!-- Teachers -->
-        <section id="teachers" class="section fade-in">
-            <h2> Наши преподаватели</h2>
-            <div class="teachers-grid">
-                <div class="teacher-card" data-teacher="Алексей Смирнов">
-                    <div class="teacher-photo">
-                        <i class="fas fa-guitar"></i>
-                    </div>
+            <h2>Наши преподаватели:</h2>
+            <ul>
+                <li class="teacher">
+                    <div class="teacher-avatar"> <img src="учитель" alt="препод" class="section-icon"></div>
                     <div class="teacher-info">
-                        <div class="teacher-name">Медведев Эрик</div>
-                        <div class="teacher-specialty">Классическая гитара</div>
-                        <div class="teacher-bio">15 лет опыта, выпускник консерватории.</div>
+                        <h3>Михаил Петров</h3>
+                        <div class="teacher-specialty">Классическая гитара • 12 лет опыта</div>
+                        <p>Окончил Гнесинку. Преподает с 2014 года. Победитель конкурса "Молодые гитаристы".</p>
+                        <div class="teacher-contact">📱 <a href="tel:+79876543211">+7 (987) 654-32-11</a></div>
                     </div>
-                </div>
-                <div class="teacher-card" data-teacher="Мария Иванова">
-                    <div class="teacher-photo">
-                        <i class="fas fa-drum"></i>
-                    </div>
+                </li>
+                <li class="teacher">
+                    <div class="teacher-avatar"> <img src="2026-03-13_23-21-17.png" alt="препод" class="section-icon"></div>
                     <div class="teacher-info">
-                        <div class="teacher-name">Саватеев Евгений</div>
-                        <div class="teacher-specialty">Электрогитара & рок</div>
-                        <div class="teacher-bio">Гитарист групп "Dota Live".</div>
+                        <h3>Анна Иванова</h3>
+                        <div class="teacher-specialty">Русский рок • 8 лет опыта</div>
+                        <p>Специалист по Би-2, Сплин, ДДТ. Играет в группе "Ночные стрелки".</p>
+                        <div class="teacher-contact">📱 <a href="tel:+79876543212">+7 (987) 654-32-12</a></div>
                     </div>
-                </div>
-                <div class="teacher-card" data-teacher="Дмитрий Петров">
-                    <div class="teacher-photo">
-                        <i class="fas fa-music"></i>
-                    </div>
+                </li>
+                <li class="teacher">
+                    <div class="teacher-avatar"> <img src="diploma.webp" alt="препод" class="section-icon"></div>
                     <div class="teacher-info">
-                        <div class="teacher-name">Колбасенко Данил</div>
-                        <div class="teacher-specialty">Теория музыки</div>
-                        <div class="teacher-bio">Автор учебника по гитарной технике.</div>
+                        <h3>Дмитрий Соколов</h3>
+                        <div class="teacher-specialty">Электрогитара • 10 лет опыта</div>
+                        <p>Сессионный музыкант. Записал 5 альбомов. Преподает соло и эффекты.</p>
+                        <div class="teacher-contact">📱 <a href="tel:+79876543213">+7 (987) 654-32-13</a></div>
                     </div>
-                </div>
-                <div class="teacher-card" data-teacher="Елена Козлова">
-                    <div class="teacher-photo">
-                        <i class="fas fa-headphones"></i>
-                    </div>
+                </li>
+                <li class="teacher">
+                    <div class="teacher-avatar"><img src="2026-03-13_23-23-14.png" alt="препод" class="section-icon"></div>
                     <div class="teacher-info">
-                        <div class="teacher-name">Ризванов Риналь</div>
-                        <div class="teacher-specialty">Блюз & джаз</div>
-                        <div class="teacher-bio">Победитель джаз-конкурса 2024.</div>
+                        <h3>Елена Козлова</h3>
+                        <div class="teacher-specialty">Аккомпанемент • 6 лет опыта</div>
+                        <p>Работает с вокалистами. Учит петь под гитеру. Автор методики для детей.</p>
+                        <div class="teacher-contact">📱 <a href="tel:+79876543214">+7 (987) 654-32-14</a></div>
                     </div>
-                </div>
-            </div>
+                </li>
+            </ul>
         </section>
-
-        <!-- Contact -->
-        <section id="contact" class="section contact-section fade-in">
-            <h2>😄 Связаться с нами</h2>
-            <div class="contact-info">
-                <div class="contact-item"><i class="fas fa-phone"></i> +7 (987) 123-45-67</div>
-                <div class="contact-item"><i class="fas fa-envelope"></i> klub.gitar@yandex.ru</div>
-                <div class="contact-item"><i class="fas fa-map-marker-alt"></i> ул. Музыкальная, 1</div>
-                <div class="free-lesson">Первое занятие <strong>БЕСПЛАТНО!</strong></div>
+        
+        <section id="reviews" class="reviews">
+            <img src="2026-03-13_23-25-51.png" alt="Отзывы" class="section-icon">
+            <h2>Что говорят ученики </h2>
+            <ul>
+                <li>
+                    <div class="avatar">Аня</div>
+                    <div>"Михаил Петров научил классику за месяц! Учителя супер!"</div>
+                </li>
+                <li>
+                    <div class="avatar">Дима</div>
+                    <div>"С Дмитрием соло на электрогитаре освоил. Уже в группе играю!"</div>
+                </li>
+                <li>
+                    <div class="avatar">Катя</div>
+                    <div>"Анна учит круто русский рок! Группа маленькая, все внимание."</div>
+                </li>
+                <li>
+                    <div class="avatar">Миша</div>
+                    <div>"Елена помогает петь с гитарой. Записали мою песню на видео!"</div>
+                </li>
+                <li>
+                    <div class="avatar">Даша</div>
+                    <div>"Бесплатный пробный урок — то что надо. Записалась сразу."</div>
+                </li>
+            </ul>
+        </section>
+        
+        <section id="contact">
+            <img src="be64d8192923ea195457f5225256c4e55a5cf8622889a5df0e7a32a236cbfb42.gif" alt="Звоните" class="section-icon">
+            <h2>Запись на уроки</h2>
+            <div class="contact-item">
+                📱 <a href="tel:+79876543210">+7 (987) 654-32-10</a>
             </div>
+            <div class="contact-item">
+                ✉️ <a href="mailto:klub.gitaristov@mail.ru">klub.gitaristov@mail.ru</a>
+            </div>
+            <div class="contact-item">
+                🌐 <a href="https://vk.com/young_guitarists" target="_blank">VK группа клуба</a>
+            </div>
+            <div class="contact-item">
+                📺 <a href="https://rutube.ru/video/31aaf0fa95328f7181f732f80e851cb1/?r=wd" target="_blank">Первый урок ждет тебя на RuTube</a>
+            </div>
+            <p style="margin-top: 20px; font-size: 0.9em;">г. Альметьевск, ул. Музыкальная, 10</p>
         </section>
     </div>
-
-    <!-- Schedule Modal -->
-    <div id="scheduleModal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2 id="modalDayTitle"></h2>
-            <div id="modalDayContent"></div>
-        </div>
-    </div>
-
-    <!-- Teacher Modal -->
-    <div id="teacherModal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <div id="teacherModalContent"></div>
-        </div>
-    </div>
-
-    <script>
-        // Smooth scrolling
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-
-        // Fade in on scroll
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                }
-            });
-        }, observerOptions);
-
-        document.querySelectorAll('.fade-in').forEach(el => {
-            observer.observe(el);
-        });
-
-        // Modal data
-        const teachersData = {
-            'Медведев Эрик': `
-                <h2 style="color: #ff6b35; margin-bottom: 1rem;">⚡ Медведев Эрик</h2>
-                <p><strong>Стаж:</strong> 15 лет</p>
-                <p><strong>Специализация:</strong> Классическая гитара, фламенко</p>
-                <p>Выпускник Российской академии музыки им. Гнесиных. Лауреат международных конкурсов.</p>
-                <p><em>"Музыка — это язык души. Научу каждого говорить на нём!"</em></p>
-            `,
-            'Саватеев Евгений': `
-                <h2 style="color: #f7931e; margin-bottom: 1rem;">⚡ Саватеев Евгений</h2>
-                <p><strong>Стаж:</strong> 10 лет</p>
-                <p><strong>Специализация:</strong> Электрогитара, рок, метал</p>
-                <p>Экс-гитаристка групп "Dota Live". Записал 3 альбома.</p>
-                <p><em>"Рок — это энергия! Давай зажжём на полную!"</em></p>
-            `,
-            'Колбасенко Данил': `
-                <h2 style="color: #667eea; margin-bottom: 1rem;">⚡ Колбасенко Данил</h2>
-                <p><strong>Стаж:</strong> 20 лет</p>
-                <p><strong>Специализация:</strong> Теория музыки, сочинение</p>
-                <p>Кандидат искусствоведения. Автор учебника "Гитарная гармония".</p>
-                <p><em>"Пойми теорию — и гитара зазвучит по-новому!"</em></p>
-            `,
-            'Ризванов Риналь': `
-                <h2 style="color: #764ba2; margin-bottom: 1rem;">⚡ Ризванов Риналь</h2>
-                <p><strong>Стаж:</strong> 12 лет</p>
-                <p><strong>Специализация:</strong> Блюз, джаз, фьюжн</p>
-                <p>Победитель European Jazz Guitar Competition 2024.</p>
-                <p><em>"В каждом аккорде — целая история. Научу слушать музыку!"</em></p>
-            `
-        };
-
-        // Event listeners for schedule modals
-        document.querySelectorAll('.schedule-day').forEach(day => {
-            day.addEventListener('click', function() {
-                const modalData = this.dataset.modal.split('|');
-                document.getElementById('modalDayTitle').textContent = modalData[0];
-                document.getElementById('modalDayContent').innerHTML = modalData[1].replace(/\n/g, '<br>');
-                document.getElementById('scheduleModal').style.display = 'block';
-            });
-        });
-
-        // Event listeners for teacher modals
-        document.querySelectorAll('.teacher-card').forEach(card => {
-            card.addEventListener('click', function() {
-                const teacherName = this.dataset.teacher;
-                document.getElementById('teacherModalContent').innerHTML = teachersData[teacherName];
-                document.getElementById('teacherModal').style.display = 'block';
-            });
-        });
-
-        // Close modals
-        document.querySelectorAll('.close').forEach(closeBtn => {
-            closeBtn.addEventListener('click', function() {
-                this.closest('.modal').style.display = 'none';
-            });
-        });
-
-        // Close modals on outside click
-        window.onclick = function(event) {
-            if (event.target.classList.contains('modal')) {
-                event.target.style.display = 'none';
-            }
-        };
-
-        // Navbar scroll effect
-        window.addEventListener('scroll', () => {
-            const nav = document.querySelector('.nav');
-            if (window.scrollY > 100) {
-                nav.style.background = 'rgba(26,26,46,0.98)';
-                nav.style.boxShadow = '0 5px 20px rgba(0,0,0,0.2)';
-            } else {
-                nav.style.background = 'rgba(26,26,46,0.95)';
-                nav.style.boxShadow = 'none';
-            }
-        });
-    </script>
+    
+    <footer>
+        <p>&copy; 2026 Клуб юных гитаристов. Все права защищены.</p>
+    </footer>
 </body>
 </html>
+
+
