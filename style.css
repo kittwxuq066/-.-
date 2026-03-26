@@ -2,7 +2,7 @@
             --purple: #6a1b9a;
             --blue: #1e3a8a;
             --cyan: #06b6d4;
-            --light-purple: #c084fc;
+            --light-purple: #fafafa;
             --light-blue: #93c5fd;
             --gradient: linear-gradient(135deg, var(--purple), var(--blue), var(--cyan));
         }
